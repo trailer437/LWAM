@@ -1,3 +1,4 @@
+**English** | [한국어](README_ko.md)
 # LWAM — Lightweight Latent World Action Model
 
 A lightweight robotics research project exploring action-conditioned latent world modeling and future-aware action generation on consumer-grade GPUs.
