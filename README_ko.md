@@ -1,3 +1,4 @@
+[English](README.md) | **한국어**
 # LWAM — 경량 잠재 공간 월드 액션 모델 (Lightweight Latent World Action Model)
 
 일반 소비자용 GPU 환경에서 행동 조건부 잠재 공간 월드 모델링(Action-Conditioned Latent World Modeling)과 미래 예측 기반 행동 생성을 연구하는 경량 로봇 AI 프로젝트입니다.
