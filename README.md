@@ -1,9 +1,12 @@
-**English** | [한국어](README_ko.md)
 # LWAM — Lightweight Latent World Action Model
 
 A lightweight robotics research project exploring action-conditioned latent world modeling and future-aware action generation on consumer-grade GPUs.
 
-> **Project status:** Early-stage research and development (v0.1 planned). The architecture, training pipeline, and hardware targets below are proposals, not validated results.
+> **Project status:** v0.1 research prototype. CPU unit tests and synthetic training smoke tests passed; real PushT, DINOv2 download and GPU performance remain unverified.
+
+## Quick start
+
+See [Korean execution guide](QUICKSTART_ko.md) for the actual commands, dependencies and validation limits. The code uses a state-conditioned dynamics model that predicts both the next latent and robot state. The following research plan describes the broader intended architecture.
 
 ## Overview
 

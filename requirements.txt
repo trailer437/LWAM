@@ -1,0 +1,7 @@
+# Install CUDA-enabled torch/torchvision for your driver first.
+torch>=2.2
+torchvision>=0.17
+numpy>=1.26,<3
+PyYAML>=6
+lerobot>=0.4,<0.5
+pytest>=8
