@@ -1,0 +1,37 @@
+seed: 42
+device: cuda
+encoder:
+  name: dinov2_vits14
+  image_size: 224
+  latent_dim: 384
+  batch_size: 16
+data:
+  repo_id: lerobot/pusht
+  revision: v3.0
+  raw_dir: data/raw/pusht
+  cache_dir: data/synthetic_cache
+  image_key: observation.image
+  state_key: observation.state
+  action_key: action
+  fps: 10
+  goal_mode: final_observation
+  train_fraction: 0.8
+  val_fraction: 0.1
+model:
+  latent_dim: 384
+  state_dim: 2
+  action_dim: 2
+  hidden_dim: 32
+  horizon: 5
+training:
+  batch_size: 32
+  epochs: 30
+  learning_rate: 0.0003
+  joint_learning_rate: 0.0001
+  precision: fp32
+  gradient_clip: 1.0
+  num_workers: 0
+  world_weight: 1.0
+  initial_weight: 1.0
+  refined_weight: 1.0
+  checkpoint_dir: checkpoints/synthetic_cuda
